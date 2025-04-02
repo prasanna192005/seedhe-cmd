@@ -1,0 +1,26 @@
+{
+  "name": "seedhe-cmd",
+  "version": "1.0.5",
+  "description": "A command-line tool for quick access to cheatsheets and AI-powered command assistance.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "chalk": "^5.4.1",
+    "clipboardy": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "figlet": "^1.8.0",
+    "inquirer": "^9.2.12",
+    "ora": "^8.2.0"
+  },
+  "bin": {
+    "seedhe": "./index.js",
+    "seedhe-cmd": "./index.js"
+  }
+}
