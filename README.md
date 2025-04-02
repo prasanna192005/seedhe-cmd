@@ -1,7 +1,7 @@
 # Seedhe CMD
 
 Seedhe CMD is a command-line tool designed to streamline your development workflow by providing quick access to common command cheatsheets and AI-powered command assistance.
-
+![Seedhe CMD Demo](./100.gif)
 ## Features
 
 - **Cheatsheets:** Access essential command-line cheatsheets for Git, Docker, Linux, React, Next.js, and Node.js directly from your terminal.
