@@ -1,7 +1,3 @@
-Got it. Here’s a **clean, professional, recruiter- and enterprise-friendly README** — no hype, no gimmicks:
-
----
-
 # Seedhe CMD
 
 Seedhe CMD is a command-line tool that provides instant access to commonly used development commands and AI-assisted command guidance directly within the terminal. It helps developers reduce context switching by eliminating the need to search documentation or external resources.
@@ -130,5 +126,4 @@ Contributions are welcome. Please open an issue or submit a pull request.
 ## License
 
 MIT License
-
 
