@@ -1,105 +1,134 @@
+Got it. Here’s a **clean, professional, recruiter- and enterprise-friendly README** — no hype, no gimmicks:
+
+---
+
 # Seedhe CMD
 
-Seedhe CMD is a command-line tool designed to streamline your development workflow by providing quick access to common command cheatsheets and AI-powered command assistance.
-![Seedhe CMD Demo](./100.gif)
+Seedhe CMD is a command-line tool that provides instant access to commonly used development commands and AI-assisted command guidance directly within the terminal. It helps developers reduce context switching by eliminating the need to search documentation or external resources.
+
+<p align="center">
+  <img src="./100.gif" alt="Seedhe CMD Demo" width="700"/>
+</p>
+
+---
+
+## Overview
+
+Seedhe CMD improves developer productivity by combining curated command cheatsheets with AI-powered assistance. It enables developers to quickly reference commands, understand their usage, and resolve issues without leaving their workflow.
+
+This project was developed before AI-assisted command guidance became widely integrated into modern IDEs and tooling.
+
+---
+
 ## Features
 
-- **Cheatsheets:** Access essential command-line cheatsheets for Git, Docker, Linux, React, Next.js, and Node.js directly from your terminal.
-- **AI Chat:** Get AI-powered command suggestions and explanations using the Google Gemini API.
-- **Easy to Use:** Simple and intuitive command-line interface.
+**Command Cheatsheets**
+Access frequently used commands for:
+
+* Git
+* Docker
+* Linux
+* React
+* Next.js
+* Node.js
+
+**AI-Assisted Command Guidance**
+Provides command suggestions and explanations using the Google Gemini API.
+
+**Terminal-Native Interface**
+Fully operates within the command line environment.
+
+**Lightweight and Easy to Install**
+Minimal dependencies and simple setup.
+
+---
 
 ## Installation
+
+Install globally using npm:
 
 ```bash
 npm install -g seedhe-cmd
 ```
 
-### Google Gemini API Key Setup (for AI Chat)
+---
 
-The AI chat feature requires a Google Gemini API key.
+## API Key Setup (Required for AI Features)
 
-#### Obtain your API key:
-1. Go to the Google Cloud Console, enable the Gemini API, and create an API key.
+Seedhe CMD uses the Google Gemini API.
 
-#### Set the environment variable:
+### Linux / macOS
 
-##### Linux/macOS:
 ```bash
 export GOOGLE_GEMINI_API_KEY=YOUR_API_KEY
 ```
-(Add this line to your `.bashrc` or `.zshrc` for a permanent setting.)
 
-##### Windows (PowerShell):
+### Windows (PowerShell)
+
 ```powershell
-set GOOGLE_GEMINI_API_KEY=YOUR_API_KEY
+setx GOOGLE_GEMINI_API_KEY "YOUR_API_KEY"
 ```
-(Use `setx` for a permanent setting, or configure it via system settings.)
 
-Replace `YOUR_API_KEY` with your actual API key.
-
-⚠️ **Important:** Keep your API key secure and do not share it publicly.
+---
 
 ## Usage
 
-### Cheatsheets
-To access a cheatsheet, use the following command:
-
-```bash
-seedhe <cheatsheet_name>
-```
-
-Replace `<cheatsheet_name>` with one of the following:
-
-- `git`
-- `docker`
-- `linux`
-- `react`
-- `nextjs`
-- `nodejs`
-
-#### Example:
-```bash
-seedhe git
-```
-
-### AI Chat
-To start the AI chat mode, use the following command:
-
-```bash
-seedhe chat
-```
-
-### Main Menu
-To open the main menu, run:
+Open the interactive menu:
 
 ```bash
 seedhe
 ```
 
-### Exit
-To exit the application, run:
+Open a cheatsheet directly:
+
+```bash
+seedhe git
+seedhe docker
+seedhe linux
+seedhe react
+seedhe nextjs
+seedhe nodejs
+```
+
+Start AI assistance:
+
+```bash
+seedhe chat
+```
+
+Exit:
 
 ```bash
 seedhe exit
 ```
 
-## Command Guide
+---
 
-- `seedhe` : Opens the main interactive menu.
-- `seedhe <cheatsheet_name>` : Directly displays the specified cheatsheet.
-- `seedhe chat` : Starts the AI chat mode.
-- `seedhe exit` : Exits the application.
+## Use Cases
 
-## Troubleshooting
+* Quickly referencing commands during development
+* Learning command-line tools
+* Reducing reliance on browser-based documentation
+* Improving terminal-based workflows
 
-- **"❌ ERROR: Missing Google Gemini API key."**: Ensure you have correctly set the `GOOGLE_GEMINI_API_KEY` environment variable.
-- **"❌ Error: Failed to connect to AI!"**: Verify your internet connection and that your API key is valid.
-- **"❌ Failed to copy the command."**: In some terminal environments, copying to the clipboard might not be supported. Copy the command manually.
+---
+
+## Tech Stack
+
+* Node.js
+* CLI tooling (Node ecosystem)
+* Google Gemini API
+
+---
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit pull requests or open issues.
+Contributions are welcome. Please open an issue or submit a pull request.
+
+---
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License
+
+
